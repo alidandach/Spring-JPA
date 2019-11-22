@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Spring JPA Example
+  datasource:
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/spring_jpa_example
+    hikari:
+      allow-pool-suspension: true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+  output:
+    ansi:
+      enabled: always
